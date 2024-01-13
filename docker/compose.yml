@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  python:
+    container_name: "python"
+    build: 
+      context: .
+      dockerfile: python/Dockerfile
+    volumes:
+      - ./python/app:/app
+    ports:
+    - '3001:3001'
