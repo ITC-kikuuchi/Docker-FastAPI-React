@@ -10,3 +10,34 @@ services:
       - ./python/app:/app
     ports:
     - '3001:3001'
+
+  mariadb:
+    container_name: "mariadb"
+    build:
+      context: .
+      dockerfile: ./mariadb/Dockerfile
+    ports:
+      - ${MARIADB_PORT}:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      TZ: ${TZ}
+    networks:
+      - default
+    volumes:
+      - db-store:/var/lib/mysql
+
+  adminer:
+    container_name: "adminer"
+    image: adminer:latest
+    environment:    
+      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_DESIGN: ng9    
+    ports:
+      - 8081:8080
+
+networks:
+  default:
+    name: container_network
+
+volumes:
+  db-store:
