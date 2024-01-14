@@ -16,8 +16,8 @@ services:
       context: .
       dockerfile: node/Dockerfile
     volumes:
-      - ./:/usr/src/app
-    command: sh -c 'cd front && yarn start'
+      - ../front:/usr/src/app
+    command: sh -c 'yarn start'
     ports:
       - '3000:3000'
 

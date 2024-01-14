@@ -1,3 +1,3 @@
 docker/.env
 docker/python/app
-docker/front
+front
