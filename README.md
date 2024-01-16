@@ -18,7 +18,15 @@ http://localhost:3001/
 docker フォルダと同階層にフォルダ front を作成する。  
 既存のプロジェクトは front にクーロンする。  
 恐らく、package.json が front 配下に存在しない場合、React の画面は表示されないはず…。  
+ごめんなさい。まだ node_module のインストール方法がわかりません。  
+恐らく`npm -install` 的な感じなのを叩けばいいのかと…。
 
 プロジェクト作成後に以下にアクセスして、React の画面が表示されること。  
 http://localhost:3000/
+
+# Python コンテナの入り方
+`docker-compose exec python bash`
+
+# node コンテナの入り方
+`docker-compose exec node sh`
 
