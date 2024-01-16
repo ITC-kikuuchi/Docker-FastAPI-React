@@ -1,2 +1,5 @@
 mysqlclient
+alembic
 sqlalchemy
+sqlalchemy-migrate
+python-dotenv
