@@ -6,18 +6,20 @@ Dockerを使用したFastAPI,React の開発環境の構築
 
 # バックエンド
 プロジェクトの作成  
-docker/python 配下にフォルダ app を作成する。  
-既存のプロジェクトは app にクーロンする。  
+docker/python 配下にフォルダ `app` を作成する。  
+既存のプロジェクトは `app` にクーロンする。  
 
-以下にアクセスして画面に Hello World が表示されることを確認する。  
+以下にアクセスして画面に `{"detail":"Not Found"}` が表示されることを確認する。  
 (device_management_back リポジトリをクーロンした場合)  
 http://localhost:3001/
 
 # フロントエンド
 プロジェクトの作成  
-docker フォルダと同階層にフォルダ front を作成する。  
-既存のプロジェクトは front にクーロンする。  
-恐らく、package.json が front 配下に存在しない場合、React の画面は表示されないはず…。  
+docker フォルダと同階層にフォルダ `front` を作成する。  
+既存のプロジェクトは `front` にクーロンする。  
+恐らく、`package.json` が `front` 配下に存在しない場合、`React` の画面は表示されないはず…。
+※ dockerコンテナが立ち上がっても React アプリの画面が表示されるまで時間がかかります。  
+
 ごめんなさい。まだ node_module のインストール方法がわかりません。  
 恐らく`npm -install` 的な感じなのを叩けばいいのかと…。
 
