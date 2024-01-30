@@ -4,6 +4,10 @@ Dockerを使用したFastAPI,React の開発環境の構築
 # 目的
 現在システム開発で使用している言語に加え、別の言語、フレームワークの技術と知識を習得するため
 
+# 注意
+feature/menu_suggestion_system は develop にマージしないようお願いします。  
+こちらはAI学習用システムの開発環境となっております。
+
 # バックエンド
 プロジェクトの作成  
 docker/python 配下にフォルダ `app` を作成する。  
@@ -31,4 +35,6 @@ http://localhost:3000/
 
 # node コンテナの入り方
 `docker-compose exec node sh`
+
+
 
