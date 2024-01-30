@@ -1,9 +1,0 @@
-mysqlclient
-alembic
-sqlalchemy
-sqlalchemy-migrate
-python-dotenv
-python-multipart
-PyMySQL
-pydantic
-python-jose
