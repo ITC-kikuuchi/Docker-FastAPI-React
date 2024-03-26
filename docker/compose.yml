@@ -11,15 +11,15 @@ services:
     ports:
     - '3001:3001'
 
-  node:
-    build: 
-      context: .
-      dockerfile: node/Dockerfile
-    volumes:
-      - ../front:/usr/src/app
-    command: sh -c 'yarn start'
-    ports:
-      - '3000:3000'
+  # node:
+  #   build: 
+  #     context: .
+  #     dockerfile: node/Dockerfile
+  #   volumes:
+  #     - ../front:/usr/src/app
+  #   command: sh -c 'yarn start'
+  #   ports:
+  #     - '3000:3000'
 
   mariadb:
     container_name: "mariadb"
