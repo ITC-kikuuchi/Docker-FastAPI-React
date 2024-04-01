@@ -7,3 +7,4 @@ python-multipart
 PyMySQL
 pydantic
 python-jose
+black
